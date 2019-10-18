@@ -9,17 +9,14 @@ int is_isogram(const char phrase[]){
 	
 	int length = strlen(phrase);
 	
-	if (strlen(phrase) == 0){
+	printf("length: %d\n", length);
+	
+	if (length >= 0){
 		return 1;
 		}
 		
-	if (phrase == NULL){
-		return 0;
-		}
-	int i;
-	while ( i = 0; i < length; i++){
-		printf("length %d\n", length);
-		}
+	if (*phrase == '\0'){
+		return 0;}
 	
 	return 0;
 }
